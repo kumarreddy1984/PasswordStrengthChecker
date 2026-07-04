@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Password Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Password Strength Checker</h1>
+
+    <input type="password" id="password" placeholder="Enter password"
+           oninput="liveCheck()">
+
+    <div class="controls">
+        <label><input type="checkbox" onclick="togglePassword()"> Show</label>
+        <button onclick="generatePassword()">Generate</button>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+
+    <!-- Strength Bar -->
+    <div class="bar">
+        <div id="barFill"></div>
+    </div>
+
+    <h2 id="strength">Strength: </h2>
+    <h3 id="score">Score: </h3>
+    <h3 id="percentage">Percentage: </h3>
+
+    <div class="box">
+        <pre id="output"></pre>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
